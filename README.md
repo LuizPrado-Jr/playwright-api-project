@@ -1,30 +1,67 @@
+# Playwright API Project
 
-## Linguagens e Frameworks Utilizados
+Automação de testes de API utilizando Playwright e TypeScript, com foco em cenários básicos e métodos HTTP na API pública [Reqres](https://reqres.in).
 
-- **Linguagem:** TypeScript
-- **Framework de Testes:** [Playwright](https://playwright.dev/)
-- **API de Teste:** [Reqres](https://reqres.in)
+---
+
+## Estrutura de Pastas
+
+```
+playwright-api-project/
+├── node_modules/                # Dependências instaladas
+├── tests/                       # Testes automatizados
+│   └── playwright-api-tests.spec.ts
+├── playwright-report/           # Relatórios HTML dos testes
+├── test-results/                # Resultados dos testes em JSON
+├── package.json                 # Configuração de dependências e scripts
+├── playwright.config.ts         # Configuração do Playwright
+└── README.md                    # Documentação do projeto
+```
+
+---
+
+## Versões Utilizadas
+
+- **Node.js:** 20.x ou superior
+- **Playwright:** 1.44.x ou superior
+- **TypeScript:** 5.x ou superior
+
+---
+
+## Dependências
+
+- [Playwright](https://playwright.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+### Instalação
+
+No terminal, execute na raiz do projeto:
+
+```sh
+npm install
+```
+
+---
 
 ## Como Executar os Testes
 
-1. **Pré-requisitos:**  
-   - Ter o [Node.js](https://nodejs.org/) instalado.
-
-2. **Instalar dependências:**  
+1. **Rodar todos os testes:**
    ```sh
-   npm install
+   npx playwright test
+   ```
 
-3. **Executar os testes:**
-npx playwright test
+2. **Gerar relatório HTML:**
+   ```sh
+   npx playwright test --reporter=html
+   npx playwright show-report
+   ```
 
-4. **Gerar e visualizar relatório HTML:**
-npx playwright test --reporter=html
-npx playwright show-report
+O relatório será aberto automaticamente ou pode ser acessado em `playwright-report/index.html`.
 
-O relatório será aberto automaticamente ou pode ser acessado em index.html.
+---
 
-5. **Onde Rodar**
-Execute os comandos acima no terminal, dentro da pasta raiz do projeto.
+## Observações
 
-6. **Onde Ver os Relatórios**
-Após rodar os testes com o comando npx playwright test playwright-api-tests.spec.ts --reporter html, o relatório estará disponível em index.html.
+- Execute todos os comandos no terminal, dentro da pasta raiz do projeto.
+- Para adicionar novos testes, utilize a pasta `tests/`.
+
