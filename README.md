@@ -1,18 +1,30 @@
-# playwright-api-project
-Testes automatizados em uma api para estudos (https://reqres.in) que verificar os responses (status  codes, headers e corpo)
 
-## Como utilizar:
+## Linguagens e Frameworks Utilizados
 
-# Baixar e extrair o arquivo .zip e descompactar em um diretorio local ou clonar o projeto.
+- **Linguagem:** TypeScript
+- **Framework de Testes:** [Playwright](https://playwright.dev/)
+- **API de Teste:** [Reqres](https://reqres.in)
 
--Instalar as dependencias com **npm install""
+## Como Executar os Testes
 
-# Executar os testes e relatórios:
+1. **Pré-requisitos:**  
+   - Ter o [Node.js](https://nodejs.org/) instalado.
 
--Npx playwright test
--npx playwright show-report
+2. **Instalar dependências:**  
+   ```sh
+   npm install
 
-**Para executar e gerar relatorio**
--npx playwright test playwright-api-tests.spec.ts --reporter html
+3. **Executar os testes:**
+npx playwright test
 
-Lembrando que é imprensidivel ter o node.js instalado.
+4. **Gerar e visualizar relatório HTML:**
+npx playwright test --reporter=html
+npx playwright show-report
+
+O relatório será aberto automaticamente ou pode ser acessado em index.html.
+
+5. **Onde Rodar**
+Execute os comandos acima no terminal, dentro da pasta raiz do projeto.
+
+6. **Onde Ver os Relatórios**
+Após rodar os testes com o comando npx playwright test playwright-api-tests.spec.ts --reporter html, o relatório estará disponível em index.html.
