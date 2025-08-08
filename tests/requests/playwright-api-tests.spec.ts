@@ -1,7 +1,7 @@
 // playwright-api-tests.spec.ts
 import { test, expect, request } from '@playwright/test';
-import { BASE_URL, endpoints } from '../mappings/enviroment';
-import { getRandomInt, getRandomUserData, defaultHeaders } from '../utils/randomUtils';
+import { BASE_URL, endpoints } from '../../src/mappings/enviroment';
+import { getRandomInt, getRandomUserData, defaultHeaders } from '../../src/utils/randomUtils';
 
 const TEST_USER_ID = 2;
 test.describe('Tarefa 1 - Testes básicos de API', () => {

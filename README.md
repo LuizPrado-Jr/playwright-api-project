@@ -8,14 +8,19 @@ Automação de testes de API utilizando Playwright e TypeScript, com foco em cen
 
 ```
 playwright-api-project/
-├── node_modules/                # Dependências instaladas
-├── tests/                       # Testes automatizados
-│   └── playwright-api-tests.spec.ts
-├── playwright-report/           # Relatórios HTML dos testes
-├── test-results/                # Resultados dos testes em JSON
-├── package.json                 # Configuração de dependências e scripts
-├── playwright.config.ts         # Configuração do Playwright
-└── README.md                    # Documentação do projeto
+├── node_modules/                  # Dependências instaladas
+├── src/mappings                   # Código de apoio e utilitários
+│       ├── apiEndpoints.ts        # Mapeamento de URLs e endpoints da API
+│   └──utils   
+       └── testUtils.ts            # Funções utilitárias e geração de dados
+├── tests/                         # Testes automatizados
+│   ├── requests/                  # Testes de requisições HTTP
+│   │   └── playwright-api-tests.spec.ts
+├── playwright-report/             # Relatórios HTML dos testes
+├── test-results/                  # Resultados dos testes em JSON
+├── package.json                   # Configuração de dependências e scripts
+├── playwright.config.ts           # Configuração do Playwright
+└── README.md                      # Documentação do projeto
 ```
 
 ---
@@ -67,8 +72,8 @@ O relatório será aberto automaticamente ou pode ser acessado em `playwright-re
 
 - **Melhorias Solicitadas**
 
-- URLs e endpoints centralizados em tests/fixtures/enviroments.ts
-- Dados e funções em utils/randomUtils.ts
+- URLs e endpoints centralizados em src/mapping/enviroments.ts
+- Dados e funções em src/utils/randomUtils.ts e testes para dentro do diretorio requests
 - Testes utilizando os dados randomicos criados e reaproveitando as functions e const 
 - Código organizado conforme solicitado e de fato fica mais organizado e fácil de manter.
 
