@@ -65,3 +65,10 @@ O relatório será aberto automaticamente ou pode ser acessado em `playwright-re
 - Execute todos os comandos no terminal, dentro da pasta raiz do projeto.
 - Para adicionar novos testes, utilize a pasta `tests/`.
 
+- **Melhorias Solicitadas**
+
+- URLs e endpoints centralizados em tests/fixtures/enviroments.ts
+- Dados e funções em utils/randomUtils.ts
+- Testes utilizando os dados randomicos criados e reaproveitando as functions e const 
+- Código organizado conforme solicitado e de fato fica mais organizado e fácil de manter.
+
