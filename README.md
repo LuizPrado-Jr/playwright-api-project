@@ -76,4 +76,5 @@ O relatório será aberto automaticamente ou pode ser acessado em `playwright-re
 - Dados e funções em src/utils/randomUtils.ts e testes para dentro do diretorio requests
 - Testes utilizando os dados randomicos criados e reaproveitando as functions e const 
 - Código organizado conforme solicitado e de fato fica mais organizado e fácil de manter.
+- Inclusão da integração dos test com o github Actions a cada push e pull request na main. Para verificar basta realizar um pull request ou um push para main e no github na aba de Actions, verificar se ficou verde a execução do workflow: Playwright API Tests
 
